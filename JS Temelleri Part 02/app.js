@@ -51,4 +51,46 @@ console.log(2 == 2 && "Ahmet" == "Ahmet"); //true //And Operatoru && kullanilirk
 console.log(4 == 2 || "Ahmet" == "Ahmet"); //true
 console.log(4 == 2 || "Ahmet" != "Ahmet"); //false
 
-//if de kaldim bolum 14 ders 96 dakika 10.03
+const error = false;
+
+if (error == true) {
+  console.log("Hata olustu...");
+} else {
+  console.log("Hata olusmadi...");
+}
+
+const user = "mmc";
+if (user === "mmc") {
+  console.log("Kullanici Bulundu...");
+} else {
+  console.log("Kullanici Bulunamadi...");
+}
+
+const process = "5";
+
+if (process === "1") {
+  console.log("Islem 1");
+} else if (process === "2") {
+  console.log("Islem 2");
+} else if (process === "3") {
+  console.log("Islem 3");
+} else if (process === "4") {
+  console.log("Islem 4");
+} else {
+  console.log("Gecersiz Islem");
+}
+
+const number = 120;
+
+if (number == 100) {
+  console.log("Sayi 100e Esit");
+} else {
+  console.log("Sayi 100'e Esit Degil");
+}
+
+//Ternary Operator
+
+console.log(number === 100 ? "Sayi 100" : "Sayi 100 Degil");
+
+if (number === 100) console.log("Sayi 100");
+else console.log("Sayi 100 degil");
