@@ -58,6 +58,17 @@ const database = {
   },
 
   get: function () {
-    console.log;
+    console.log("Elde Edildi");
+  },
+  update: function (id) {
+    console.log(`Id: ${id} Guncellendi`);
+  },
+  delete: function (id) {
+    console.log(`Id: ${id} Silindi`);
   },
 };
+
+console.log(database.host);
+
+database.add();
+database.delete(10);
