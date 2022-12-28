@@ -1,0 +1,1 @@
+// 06 Scope Kavrami
