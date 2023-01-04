@@ -38,8 +38,9 @@ value = cardrow.parentElement;
 value = cardrow.parentElement.parentElement;
 
 //Element Kardesleri
-//Bu kisim hatali bir bak !
-value = todo;
-value = todo.previousElementSibling;
+
+// value = todo.previousElementSibling;
+// value = todo.nextElementSibling;
+// value = todo.previousElementSibling.previousElementSibling; //Burda bi hata var tekrardan bak
 
 console.log(value);
