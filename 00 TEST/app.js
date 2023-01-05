@@ -1,11 +1,12 @@
-// Calisma Sayfasi
+// Elementi ID ye gore secme
 
-// Window Object
-let value;
-value = document;
-value = document.all;
-value = document.all.length;
-value = document.all[0];
-value = document.all[6];
+let element;
 
-console.log(value);
+element = document.getElementById("todo-form");
+element = document.getElementById("tasks-title");
+
+// Elementi class a gore secme
+
+element = document.getElementsByClassName("list-group-item")[0];
+
+console.log(element);
