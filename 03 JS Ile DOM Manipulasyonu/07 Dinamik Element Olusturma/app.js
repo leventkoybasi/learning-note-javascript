@@ -1,4 +1,4 @@
-// 07 Dinamik Element Olusturma
+// 07
 //  <a id = "clear-todos" class="btn btn-dark" href="#">Tüm Taskları Temizleyin</a>
 
 const newLink = document.createElement("a");
