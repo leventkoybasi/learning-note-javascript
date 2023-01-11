@@ -19,4 +19,6 @@ const elements = document.all;
 //   console.log(elements);
 // }); //Kullanamayiz
 
+const collections = Array.from(document.all);
+
 console.log(elements);
