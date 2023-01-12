@@ -17,8 +17,22 @@ const elements = document.all;
 
 // elements.forEach(function (elements) {
 //   console.log(elements);
-// }); //Kullanamayiz
+// }); //Kullanamayiz ilk basta array'e cevirmemiz lazim
 
-const collections = Array.from(document.all);
+// const collections = Array.from(document.all);
 
-console.log(elements);
+// collections.forEach(function (collection) {
+//   console.log(collection);
+// });
+
+value = document.all[8];
+value = document.body;
+value = document.head;
+value = document.location;
+value = document.location.hostname;
+value = document.location.port;
+
+value = document.URL;
+value = document.characterSet;
+
+console.log(value);
