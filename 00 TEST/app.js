@@ -1,15 +1,8 @@
-const cardbody = document.querySelectorAll(".card-body")[1];
+let greeting = document.querySelector("#greeting");
+greeting.classList.add("text-primary");
+greeting.classList.add("title");
 
-cardbody.addEventListener("click", run);
+greeting.classList.remove("title");
+greeting.id = "levent";
 
-function run(e) {
-  if (e.target.className === "fa fa-remove") {
-    console.log("Silme Islemi");
-  }
-  if (e.target.className === "list-group-item d-flex justify-content-between") {
-    console.log("ToDo Gir");
-  }
-  if (e.target.id === "clear-todos") {
-    console.log("Tüm Taskları Temizleyin");
-  }
-}
+console.log(greeting.id);
