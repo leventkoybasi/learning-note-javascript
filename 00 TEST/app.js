@@ -1,10 +1,9 @@
-// <h1 class>Levent KOYBASI</h1>
+// let greeting = document.querySelector("#greeting");
+// greeting.classList.add("text-primary");
+// greeting.classList.add("title");
 
-/* const elementh1 = document.createElement("h1");
-const text = document.createTextNode("Levent KOYBASI");
-elementh1.appendChild(text);
-document.body.appendChild(elementh1);
-<h1>Levent KOYBASI</h1> */
+// greeting.classList.remove("title");
+// greeting.id = "levent";
 
 /* 
 The Element Object
@@ -33,14 +32,14 @@ function myRemoveFunction() {
 }
 */
 
-let username = "levent";
-const DOMAIN = "kodluyoruz.org";
+// let username = "levent";
+// const DOMAIN = "kodluyoruz.org";
 
-let email = username + "@" + DOMAIN;
+// let email = username + "@" + DOMAIN;
 
-let info = ` Merhaba ${username} sitemize hosgeldin... Mail adresin: ${email}
-KISA ISMINIZ: ${username[0] + username[1]}
-mail adreisnin uznlugu ${email.length}
-gunun saat bilgisi: ${new Date().getHours()}
-`;
-console.log(info);
+// let info = ` Merhaba ${username} sitemize hosgeldin... Mail adresin: ${email}
+// KISA ISMINIZ: ${username[0] + username[1]}
+// mail adreisnin uznlugu ${email.length}
+// gunun saat bilgisi: ${new Date().getHours()}
+// `;
+// console.log(info);
