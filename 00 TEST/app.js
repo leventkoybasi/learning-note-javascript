@@ -18,6 +18,7 @@ Click "Append" to append an item to the end of the list:
 Append
 */
 
+/*
 function myAppendFunction() {
   const newList = document.createElement("li");
   const text = document.createTextNode("Water");
@@ -30,3 +31,16 @@ function myRemoveFunction() {
     list.removeChild(list.lastElementChild);
   }
 }
+*/
+
+let username = "levent";
+const DOMAIN = "kodluyoruz.org";
+
+let email = username + "@" + DOMAIN;
+
+let info = ` Merhaba ${username} sitemize hosgeldin... Mail adresin: ${email}
+KISA ISMINIZ: ${username[0] + username[1]}
+mail adreisnin uznlugu ${email.length}
+gunun saat bilgisi: ${new Date().getHours()}
+`;
+console.log(info);
