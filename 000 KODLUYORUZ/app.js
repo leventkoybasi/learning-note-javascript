@@ -24,6 +24,8 @@ console.log(DOMAIN.slice(0, email.search("c") - 3));
 
 */
 
+/*
+
 let element = document.querySelector("#title");
 
 element.style.color = "red";
@@ -42,4 +44,15 @@ link.style.textDecorationColor = "red";
 console.log(link);
 
 let fullName = prompt("Adinizi Giriniz...");
-console.log(fullName);
+
+let greeting = document.querySelector("#greeting");
+
+greeting.innerHTML = `${greeting.innerHTML} <small style="color:red">${fullName}</small> `;
+*/
+// console.log(fullName);
+
+// let item = document.querySelector("ul#list>li:last-child");
+
+let item = document.querySelector("li:last-child");
+
+console.log(item.innerHTML);
