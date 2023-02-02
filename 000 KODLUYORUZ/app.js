@@ -53,6 +53,31 @@ greeting.innerHTML = `${greeting.innerHTML} <small style="color:red">${fullName}
 
 // let item = document.querySelector("ul#list>li:last-child");
 
-let item = document.querySelector("li:last-child");
+/*
 
-console.log(item.innerHTML);
+let item = document.querySelector("li:last-child");
+item.innerHTML = "Bu Bilgi Degisti";
+
+let item2 = document.querySelector("li:first-child");
+item2.innerHTML = "Bu da degisti";
+
+let ulDOM = document.querySelector("ul#list");
+let liDOM = document.createElement("li");
+liDOM.innerHTML = "Bizim EKledigimiz li";
+ulDOM.append(liDOM);
+
+let hDom = document.createElement("a");
+hDOM = innerHTML = " Link Olusturuldu mu?";
+// liDOM.prepend(hDOM); // append sectigimiz elementin sona ekler , prepend basian ekler
+
+// yukaridaki ordekte tek bir li secildigi icin linin basina veya sonuna ekler fakat ul yi secseydik ul.nin ilk li elementine prepend eklerken son elementine append ekler
+
+liDOM.append(hDOM);
+
+console.log(hDOM.href);
+*/
+
+let greeting = document.querySelector("#greeting");
+greeting.classList.add("text-primary");
+
+console.log(greeting.classList);
