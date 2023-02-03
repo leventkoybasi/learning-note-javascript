@@ -77,7 +77,23 @@ liDOM.append(hDOM);
 console.log(hDOM.href);
 */
 
-let greeting = document.querySelector("#greeting");
-greeting.classList.add("text-primary");
+/*
+let ulDOM = document.querySelector("ul#list");
+let ul2DOM = document.querySelector("ul#list>li:nth-child(2)");
+let liDomFirst = document.createElement("li");
+let liDomLast = document.createElement("li");
+let liDomMiddle = document.createElement("li");
 
-console.log(greeting.classList);
+liDomFirst.innerHTML = "ILK ELEMAN";
+liDomLast.innerHTML = "SON ELEMAN";
+liDomMiddle.innerHTML = "MIDDLE ELEMAN";
+
+ulDOM.prepend(liDomFirst);
+ulDOM.append(liDomLast);
+ul2DOM.append(liDomMiddle);
+
+let ul3DOM = document.querySelector("ul>li:nth-child(2)");
+ul3DOM.innerHTML = "Degisti";
+
+console.log(ul2DOM);
+*/
