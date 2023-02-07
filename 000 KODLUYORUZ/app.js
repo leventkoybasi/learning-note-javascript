@@ -268,3 +268,27 @@ title.innerHTML = `${textInfo}  -->  ${examGrade}`;
 // item.classList.add("2class");
 // item.setAttribute("id", "yeniid");
 // console.log(item.className);
+/*
+let element = document.querySelector("#title");
+let button = document.querySelector("#button");
+element.classList.add("text-primary");
+
+function myFunction() {
+  if (element.classList == "text-primary") {
+    element.setAttribute("class", "text-danger");
+  } else if (element.classList == "text-danger") {
+    element.setAttribute("class", "text-primary");
+  }
+}
+*/
+//tenary operator kullanimi
+/*
+let element = document.querySelector("#title");
+let button = document.querySelector("#button");
+element.classList.add("text-primary");
+function myFunction() {
+  element.classList == "text-danger"
+    ? (element.classList = "text-primary")
+    : (element.classList = "text-danger");
+}
+*/
