@@ -292,3 +292,17 @@ function myFunction() {
     : (element.classList = "text-danger");
 }
 */
+/*
+let ulList = document.querySelector("ul#list");
+let liList = document.createElement("a");
+liList.href = "http://www.google.com.tr";
+liList.style.textDecoration = "none";
+liList.target = "_blank";
+// liList.innerHTML = "Levent";
+textnode = document.createTextNode("KOYBASI");
+liList.appendChild(textnode);
+
+ulList.appendChild(liList);
+
+console.log(liList.innerHTML);
+*/
