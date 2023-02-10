@@ -255,7 +255,7 @@ if (examGrade >= 0 && examGrade <= 100) {
     title.classList.add("text-danger");
   }
 } else {
-  textInfo = "Bilgiler DOgru Degil";
+  textInfo = "Bilgiler Dogru Degil";
 }
 
 title.innerHTML = `${textInfo}  -->  ${examGrade}`;
