@@ -306,3 +306,68 @@ ulList.appendChild(liList);
 
 console.log(liList.innerHTML);
 */
+
+// Arrow Function Kullanimi
+/*
+function hello(firstName) {
+  console.log(`Merhaba ${firstName}`);
+}
+
+hello("JavaScript");
+
+const helloFuncV1 = firstName => {
+  console.log(`Merhaba ${firstName}`);
+};
+hello("helloFuncV1");
+
+const helloFuncV2 = firstName => console.log(`Merhaba ${firstName}`);
+hello("helloFuncV2");
+
+const helloFuncV3 = (firstName, lastName) =>
+  console.log(`Merhaba ${firstName} ${lastName}`);
+helloFuncV3("helloFuncV3", "Last Name info");
+
+function hello(info) {
+  info = "Levent";
+  console.log(`Merhaba ${info}`);
+}
+hello();
+
+*/
+
+// DOM Etkinlikleriyle Calismak (addEventListener)
+/*
+let button = document.querySelector("#button");
+button.addEventListener("mouseover", domCLick);
+function domCLick() {
+  console.log("Tiklandi");
+  button.innerHTML = "Ne Tikliyorsun LAN";
+  button.style.color == "red"
+    ? (button.style.color = "black")
+    : (button.style.color = "red");
+  console.log(this);
+}
+*/
+
+let counter = 0;
+let counterDOM = document.querySelector("#counter");
+let increaseDOM = document.querySelector("#increase");
+let decreaseDOM = document.querySelector("#decrease");
+let zeroDOM = document.querySelector("#zero");
+
+counterDOM.innerHTML = counter;
+
+increaseDOM.addEventListener("click", clickEvent);
+decreaseDOM.addEventListener("click", clickEvent);
+zeroDOM.addEventListener("click", clickEvent);
+
+function clickEvent() {
+  // console.log(this.id);
+  if (this.id == "increase") {
+    counterDOM.innerHTML = counter += 1;
+  } else if (this.id == "decrease") {
+    counterDOM.innerHTML = counter -= 1;
+  } else if (this.id == "zero") {
+    counterDOM.innerHTML = counter = 0;
+  }
+}
