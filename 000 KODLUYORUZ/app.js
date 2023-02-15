@@ -348,7 +348,31 @@ function domCLick() {
   console.log(this);
 }
 */
+//23 VIDEO
 
+// let counter = 0;
+// let counterDOM = document.querySelector("#counter");
+// let increaseDOM = document.querySelector("#increase");
+// let decreaseDOM = document.querySelector("#decrease");
+// let zeroDOM = document.querySelector("#zero");
+
+// counterDOM.innerHTML = counter;
+
+// increaseDOM.addEventListener("click", clickEvent);
+// decreaseDOM.addEventListener("click", clickEvent);
+// zeroDOM.addEventListener("click", clickEvent);
+
+// function clickEvent() {
+//   // console.log(this.id);
+//   if (this.id == "increase") {
+//     counterDOM.innerHTML = counter += 1;
+//   } else if (this.id == "decrease") {
+//     counterDOM.innerHTML = counter -= 1;
+//   } else if (this.id == "zero") {
+//     counterDOM.innerHTML = counter = 0;
+//   }
+// }
+//24 VIDEO
 let counter = 0;
 let counterDOM = document.querySelector("#counter");
 let increaseDOM = document.querySelector("#increase");
@@ -371,3 +395,6 @@ function clickEvent() {
     counterDOM.innerHTML = counter = 0;
   }
 }
+
+let user = { username: "leventkoybasi", isActive: true };
+// 25.VIDEO
