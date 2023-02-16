@@ -373,6 +373,7 @@ function domCLick() {
 //   }
 // }
 //24 VIDEO
+/*
 let counter = 0;
 let counterDOM = document.querySelector("#counter");
 let increaseDOM = document.querySelector("#increase");
@@ -395,6 +396,25 @@ function clickEvent() {
     counterDOM.innerHTML = counter = 0;
   }
 }
-
+*/
+/* 25. VIDEO
 let user = { username: "leventkoybasi", isActive: true };
-// 25.VIDEO
+
+localStorage.setItem("userInfo", user);
+localStorage.setItem("userInfo", JSON.stringify(user));
+
+let userInfo = localStorage.getItem("userInfo"); //Bilgiyi Al
+userInfo = JSON.parse(userInfo);
+
+console.log(userInfo);
+
+localStorage.setItem("number", 11);
+let items = [1, 2, 3, user];
+localStorage.setItem("newItem", items);
+localStorage.setItem("newItem", JSON.stringify(items));
+localStorage.getItem("newItem");
+JSON.parse(localStorage.getItem("newItem"));
+
+// Komplex yapilari arrayler gibi local storage.da tutmak icin JSON yapisi kullanilir. JSON.stringify(...) ile tanimlanir ve bu tanimlamada bilgi string olarak karsimiza cikar bu bilgiyi value olarak almak icin JSON.parse(...); islemi ile parcalanir ve tek tek degerlerimizi rahatlikla cagirabiliriz.
+
+*/
