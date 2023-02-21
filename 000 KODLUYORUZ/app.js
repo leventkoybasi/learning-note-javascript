@@ -418,3 +418,32 @@ JSON.parse(localStorage.getItem("newItem"));
 // Komplex yapilari arrayler gibi local storage.da tutmak icin JSON yapisi kullanilir. JSON.stringify(...) ile tanimlanir ve bu tanimlamada bilgi string olarak karsimiza cikar bu bilgiyi value olarak almak icin JSON.parse(...); islemi ile parcalanir ve tek tek degerlerimizi rahatlikla cagirabiliriz.
 
 */
+// 26 video
+/*
+let counter = localStorage.getItem("counter")
+  ? Number(localStorage.getItem("counter"))
+  : 0;
+let counterDOM = document.querySelector("#counter");
+let increaseDOM = document.querySelector("#increase");
+let decreaseDOM = document.querySelector("#decrease");
+let zeroDOM = document.querySelector("#zero");
+
+counterDOM.innerHTML = counter;
+
+increaseDOM.addEventListener("click", clickEvent);
+decreaseDOM.addEventListener("click", clickEvent);
+zeroDOM.addEventListener("click", clickEvent);
+
+function clickEvent() {
+  // console.log(this.id);
+  if (this.id == "increase") {
+    counterDOM.innerHTML = counter += 1;
+  } else if (this.id == "decrease") {
+    counterDOM.innerHTML = counter -= 1;
+  } else if (this.id == "zero") {
+    counterDOM.innerHTML = counter = 0;
+  }
+  localStorage.setItem("counter", counter);
+}
+*/
+// 27 Video
