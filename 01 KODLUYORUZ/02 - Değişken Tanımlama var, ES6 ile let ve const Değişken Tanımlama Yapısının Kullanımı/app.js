@@ -42,4 +42,3 @@ console.log(fullName3);
 // const serverPassword; //Ici bos degisken tanimlayamayiz.
 const SERVER_PASSWORD = "12345";
 console.log(SERVER_PASSWORD); // Tekrardan tanimlama yapilmaz, const ile tek seferde bilgi tanimlariz ve degismez.
-const 
