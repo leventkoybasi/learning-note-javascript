@@ -14,3 +14,28 @@ function greetings(firstName = "") {
 console.log(firstName); //degisken
 greetings(); // fonksiyona parametre gondermedik ?? //Merhaba doner
 greetings("Parametre"); // Merhaba Parametre doner
+
+function greetings2(firstNAme, lastName) {
+  let info = `Merhaba ${firstNAme} ${lastName}`;
+  return info;
+}
+
+let greetingsInfo = greetings2("Ad", "Soyad");
+// let info = "Deneme" //???
+console.log(greetingsInfo);
+
+function domIdWriteInfo(id, info) {
+  let domObject = document.querySelector(`#${id}`);
+  domObject.innerHTML = info;
+}
+
+let htmlInfo = `<span style="color:red">RED COLOR</span>`;
+domIdWriteInfo("greeting", htmlInfo);
+domIdWriteInfo("info", greetings2("Lorem", "Ipsum"));
+/*************************************************************/
+
+function toplama(sayi1, sayi2) {
+  let sonuc = sayi1 + sayi2;
+  console.log(sonuc);
+}
+toplama(Number(prompt()), Number(prompt()));
