@@ -1,23 +1,13 @@
 // 24 - localStorage ile Veri Eklemek, Düzenlemek ve Silmek
-// Benim Yaptigim Yontem (Eksikleri Var) (Duzenle)
+// https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
 
-let counter = localStorage.getItem("number");
-let counterDOM = document.querySelector("#counter");
-let increaseDOM = document.querySelector("#increase");
-let decreaseDOM = document.querySelector("#decrease");
+localStorage.setItem("myCat", "KEDIII");
+localStorage.setItem("myDog", "KOPEKK");
+localStorage.setItem("myBird", "KUSSS");
 
-increaseDOM.addEventListener("click", increaseFunction);
-function increaseFunction(event) {
-	counter += 1;
-	counterDOM.innerHTML = counter;
-	event.preventDefault();
-	localStorage.setItem("number", counter);
-}
+console.log(localStorage.getItem("myCat")); //KEDIII
+console.log(localStorage.getItem("myDog")); //KOPEKK
+console.log(localStorage.getItem("myBird")); // KUSSS
 
-decreaseDOM.addEventListener("click", decreaseFunction);
-function decreaseFunction(event) {
-	counter -= 1;
-	counterDOM.innerHTML = counter;
-	event.preventDefault();
-	localStorage.setItem("number", counter);
-}
+localStorage.removeItem("myBird");
+console.log(localStorage.getItem("myBird")); // null
