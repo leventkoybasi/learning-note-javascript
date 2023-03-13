@@ -16,7 +16,9 @@ let items = [1, 2, 3, user];
 console.log(items);
 // localStorage.setItem("newItems", items); //Yine object olark geldi
 localStorage.setItem("newItems", JSON.stringify(items));
+
 // let item2 = localStorage.getItem("newItems");
+
 let item2 = JSON.parse(localStorage.getItem("newItems")); //tek satirda yazilisi bu sekilde. Burda parse islemei localStorage kisminin tamamini kapsiyor veya iki ayri bolumde yukardaki gibi yazilabilir.
 
 console.log(item2);
