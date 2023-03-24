@@ -7,8 +7,8 @@
 4 - Eger Forma Bilgi Girilmez ise Kullaniciyi Uyar
 */
 
-let userForm = document.querySelector("#userForm");
-userForm.addEventListener("submit", formHandler);
+let userFormDOM = document.querySelector("#userForm");
+userFormDOM.addEventListener("submit", formHandler);
 
 function formHandler(event) {
 	event.preventDefault();
