@@ -14,6 +14,25 @@ function formHandler(event) {
 	event.preventDefault();
 	const USER_NAME = document.querySelector("#username");
 	const SCORE = document.querySelector("#score");
+	addItem(USER_NAME.value, SCORE.value);
 }
+/*  
+<li class="list-group-item d-flex justify-content-between align-items-center">
+A list item
+<span class="badge bg-primary rounded-pill"> 14 </span>
+</li>
+*/
 
-function addItem(userName, score) {}
+let userListDOM = document.querySelector("#userList");
+
+const addItem = (userName, score) => {
+	let liDOM = document.createElement("li");
+	liDOM.innerHTML = `${username} ${score}`;
+	liDOM.classList.add(
+		"list-group-item",
+		"d-flex",
+		"justify-content-between",
+		"align-items-center"
+	);
+	userListDOM.appendChild(liDOM);
+};
