@@ -1,77 +1,62 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Proje 01</title>
-  </head>
-  <link rel="stylesheet" href="app.css" />
-  <body>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KODLUYORUZ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <style>
+        .col-sm-8,
+        .offset-sm-2 {
+            background-color: #f7edd791 !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="alert"></div>
+    <h1>KODLUYORUZ - FrontEnd</h1>
+
     <div class="container">
-      <div class="tools">
-        <h3>METIN DUZENLEME ARACI</h3>
-        <div class="button">
-          <button class="btn">Botton 1</button>
-          <button class="btn">Botton 2</button>
-          <button class="btn">Botton 3</button>
-          <button class="btn">Botton 4</button>
-          <button class="btn">Botton 5</button>
+        <div class="row">
+            <div class="col-sm-8 offset-sm-2">
+                <form id="userForm">
+                    <div class="mb-3 mt-4">
+                        <label for="username" class="form-label">Kullanici Adi</label>
+                        <input type="text" class="form-control" name="username" id="username">
+                    </div>
+                    <div class="mb-3">
+                        <label for="score" class="form-label">Not Bilgisi</label>
+                        <input type="number" class="form-control" name="score" id="score">
+                    </div>
+                    <div class="mt-4 mb-5">
+                        <button class="btn btn-success" type="reset">RESET</button>
+                        <button class="btn btn-danger" type="submit">GONDER</button>
+                    </div>
+                </form>
+                <div class="mb-4">
+                    <ul id="userList" class="list-group">
+                        <!-- <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Seda
+                            <span class="badge bg-primary rounded-pill">12</span>
+                        </li> -->
+                    </ul>
+                </div>
+
+            </div>
         </div>
-      </div>
-      <div class="content">
-        <div id="text">
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum ea
-            velit temporibus in eligendi dolore saepe ut non error. Quae itaque
-            unde sed, deserunt libero impedit autem totam, vel optio odit minima
-            quidem fugit rem facilis fuga praesentium corrupti suscipit
-            doloremque velit quas magnam necessitatibus eveniet enim eum! Nam,
-            accusantium. Voluptate delectus perspiciatis est nisi recusandae
-            fugiat voluptates aut accusamus sequi. Alias dolorum quas voluptas
-            nisi vel, molestias inventore libero atque molestiae debitis.
-            Reiciendis consectetur dolor iure! Nobis, quis libero, autem vero
-            facilis voluptas suscipit cupiditate nihil, culpa ullam dolor eius
-            doloremque dolores corrupti ipsum minus. Illum quo explicabo nisi!
-            Voluptas nesciunt aut alias sed eaque rem itaque nihil accusantium,
-            iure, consequatur repudiandae impedit natus omnis odit, iste ipsum.
-            Sunt amet minima tempora ipsum numquam ullam error voluptates
-            nostrum, repellat et facere ratione cumque obcaecati blanditiis
-            quidem! Nemo minus perspiciatis mollitia atque suscipit. Nam fugiat
-            est dignissimos dolore? Eveniet, a nobis. Ullam culpa molestias
-            sequi! Nisi esse fuga dignissimos quo aliquam delectus doloremque
-            cupiditate dolores veniam soluta. Rem totam quae architecto
-            voluptatum quasi quibusdam laboriosam unde magni! Quam, eveniet
-            ducimus nulla accusantium dolores officia saepe. Odit doloribus,
-            ipsa quisquam laudantium harum accusamus voluptate voluptatem quis
-            excepturi autem distinctio nemo unde inventore aperiam ab expedita.
-            Autem illum totam, velit aspernatur quo qui architecto earum
-            reiciendis quasi fugiat quisquam eligendi et veniam minus itaque
-            adipisci doloribus error dolore excepturi tenetur eos. Ea obcaecati
-            temporibus velit perferendis tenetur unde eligendi. Alias eos dolor
-            possimus, minima pariatur ipsum vel nulla fuga delectus unde!
-            Eligendi voluptatum quae cum commodi ullam, illo cupiditate, eaque
-            iusto, debitis adipisci magni! Veniam sit laborum at, voluptatem
-            dolores neque odit incidunt illum error dolorem labore obcaecati
-            minima voluptates mollitia ratione facilis. Eaque possimus
-            voluptatem magni est rerum corporis, doloremque illo. Quisquam
-            consequatur esse id? Neque commodi eligendi sit atque voluptatem
-            nihil expedita impedit similique sunt accusantium, pariatur,
-            praesentium et odit eius, at inventore veniam ea repudiandae
-            deleniti harum laudantium voluptatibus laborum error! Eum, dolores.
-            Delectus eius voluptatum officiis provident error, placeat,
-            doloremque non id esse deleniti aspernatur iusto commodi eaque
-            quaerat hic necessitatibus nihil perferendis, cum deserunt eos
-            excepturi numquam quibusdam facilis. Suscipit cum eum possimus nam
-            fugit delectus facere perspiciatis minus cumque a consequuntur
-            similique, vel, iste aperiam! Fugit iste ab, maiores dolores rerum
-            pariatur tenetur ut, consequuntur optio quas illum, culpa nulla
-            corporis corrupti. Iure eveniet vero ab tempore voluptates! Ad
-            dolores sit ipsa vel possimus exercitationem illum!
-          </p>
-        </div>
-      </div>
     </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
     <script src="app.js"></script>
-  </body>
+</body>
+
 </html>
