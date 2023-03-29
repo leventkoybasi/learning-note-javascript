@@ -1,34 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kodluyoruz - Front End 101</title>
     <style>
-      body {
-        background-color: #323639;
-      }
-      h1,
-      p {
-        color: rgb(230, 218, 204);
-      }
-      .box {
-        max-width: 600px;
-      }
-    </style>
-  </head>
+        body {
+            /* background-color: #323639 !important; */
+            color: rgb(230, 218, 204);
+        }
 
-  <body>
+        h1,
+        h2 {
+            /* color: rgb(230, 218, 204); */
+            font-size: 30px;
+        }
+
+        .box {
+            max-width: 600px;
+        }
+
+        .text-primary {
+            color: rgb(14, 14, 60);
+        }
+
+        .col-sm-8,
+        .offset-sm-2 {
+            background-color: #f7edd791 !important;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div id="alert"></div>
     <div class="box">
-      <h1>Kodluyoruz - Front End 101</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi labore
-        molestias, facilis excepturi voluptate corrupti! Eos voluptatem
-        blanditiis nisi quas accusantium odio cum, fugiat sapiente fugit
-        dignissimos, at qui repellendus!
-      </p>
-    </div>
-    <script src="app.js"></script>
-  </body>
+        <h1 id="greeting">Kodluyoruz - Front End 101</h1>
+        <!-- <h2 id="info">Merhaba Dunya</h2> -->
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-sm-8 offset-sm-2">
+                    <form id="userForm">
+                        <div class="mb-3">
+                            <label class="form-label" for="username">Kullanici Adi</label>
+                            <input class="form-control" type="text" name="username" id="username">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="score">Not Bilgisi</label>
+                            <input class="form-control" type="number" name="score" id="score">
+                        </div>
+                        <div class="mb-3">
+                            <button class="btn btn-danger" type="reset">RESET</button>
+                            <button class="btn btn-success" type="submit">GONDER</button>
+                        </div>
+                    </form>
+                    <div class="mb-3">
+                        <ul class="list-group">
+                            <li class="list-group-item d-flex justify-content-between align-items-center rounded-pill">
+                                Seda<span class="badge bg-primary rounded-pill">12</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+        <script src="app.js"></script>
+</body>
+
 </html>
