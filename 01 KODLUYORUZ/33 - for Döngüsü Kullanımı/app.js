@@ -1,5 +1,8 @@
 // 33 - for Döngüsü Kullanımı
 
+// https://www.w3schools.com/js/js_loop_for.asp
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for
+
 // for ([baslangicAtamasi]; [kosulIfadesi]; [arttirimIfadesi]) {
 // yapilacak islem
 // }
@@ -33,13 +36,5 @@ for (; index4, index4 < users.length; index4++) {
     liDOM.innerHTML = users[index4];
     userListDOM.appendChild(liDOM);
 }
-
-/*
-let userListDOM = document.querySelector("#userList");
-let liDOM = document.createElement("li");
-liDOM.classList.add("list-group-item");
-liDOM.innerHTML = "Buraya Bilgi Gelecek";
-userListDOM.appendChild(liDOM);
-*/
 
 /* <li class="list-group-item">An item</li> */
