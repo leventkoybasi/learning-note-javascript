@@ -9,7 +9,7 @@
 
 let users = ["Lorem", "Ipsum", "Dolor"];
 
-for (index = 0; index < 10; index++) {
+for (let index = 0; index < 10; index++) {
     console.log(index); // 0 1 2 3 4 5 6 7 8 9
 }
 
@@ -24,7 +24,7 @@ for (; index2 < 10; index2++) {
 }
 
 let index3 = 0;
-for (; index3, index3 < users.length; index3++) {
+for (; index3 < users.length; index3++) {
     console.log(users[index3]); // Lorem Ipsum Dolor
 }
 
