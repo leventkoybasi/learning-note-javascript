@@ -92,11 +92,17 @@ const newArray = [];
 //Şimdi de forEach kullanarak yeni bir array oluşturabileceğimiz bir fonksiyon yazalım.
 
 numbers.forEach(function (numbers) {
+    //function
     newArray.push(numbers * 3);
 });
 console.log(newArray);
-
 // output = [12, 33, 27]
+
+// numbers.forEach((numbers) => { // fatarrow function
+//     newArray.push(numbers * 3);
+// });
+// console.log(newArray);
+// // output = [12, 33, 27]
 
 // Numbers array'ini kullanarak her elemanının iki fazlasına sahip olan başka bir array oluşturunuz.
 
