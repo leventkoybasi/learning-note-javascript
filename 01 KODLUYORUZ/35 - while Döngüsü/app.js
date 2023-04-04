@@ -11,6 +11,6 @@ while (counter < 10) {
 let userName = "";
 
 while (!userName) {
-    userName = prompt("Kullanici Bilginizi Girinis : ");
+    userName = prompt("Kullanici Bilginizi Giriniz : ");
     console.log(userName);
 }
