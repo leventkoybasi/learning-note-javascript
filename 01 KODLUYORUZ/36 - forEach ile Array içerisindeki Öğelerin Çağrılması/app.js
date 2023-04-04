@@ -5,6 +5,10 @@
 
 // https://www.w3schools.com/jsref/jsref_foreach.asp
 
+/// JavaScript'te forEach , döngü oluşturmamızı ve bu döngüyü sırayla çalıştırmamızı sağlayan bir array metodudur.
+
+// forEach fonksiyonu item, index, array olmak üzere 3 parametre alabilir.
+
 const PRODUCTS = [
     "laptop",
     "Phone",
@@ -51,7 +55,7 @@ app.js:42 Mouse 5 (7) ['laptop', 'Phone', 'Speaker', 'Desktop PC', 'Server', 'M
 app.js:42 Keyboard 6 (7) ['laptop', 'Phone', 'Speaker', 'Desktop PC', 'Server', 'Mouse', 'Keyboard']
 */
 
-PRODUCTS.forEach((product, index, array) => console.log(array[index]));
+PRODUCTS.forEach((_product, index, array) => console.log(array[index]));
 
 /*
 laptop
@@ -80,4 +84,25 @@ PRODUCTS.forEach((item) => {
     liDOM.classList.add("text-light");
     liDOM.innerHTML = item;
     userListDOM.append(liDOM);
+});
+
+const numbers = [4, 11, 9];
+const newArray = [];
+
+//Şimdi de forEach kullanarak yeni bir array oluşturabileceğimiz bir fonksiyon yazalım.
+
+numbers.forEach(function (numbers) {
+    newArray.push(numbers * 3);
+});
+console.log(newArray);
+
+// output = [12, 33, 27]
+
+// Numbers array'ini kullanarak her elemanının iki fazlasına sahip olan başka bir array oluşturunuz.
+
+const number2 = [12, 24, 36];
+
+number2.forEach((numbers2, index, array) => {
+    numbers3 = array[index] + 2;
+    console.log(numbers3);
 });
