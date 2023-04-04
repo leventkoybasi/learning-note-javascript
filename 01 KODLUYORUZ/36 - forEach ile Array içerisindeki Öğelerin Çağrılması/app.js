@@ -77,4 +77,7 @@ const userListDOM = document.querySelector("#userList");
 
 PRODUCTS.forEach((item) => {
     let liDOM = document.createElement("li");
+    liDOM.classList.add("text-light");
+    liDOM.innerHTML = item;
+    userListDOM.append(liDOM);
 });
