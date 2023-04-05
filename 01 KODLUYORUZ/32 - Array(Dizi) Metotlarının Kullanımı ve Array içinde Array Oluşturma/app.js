@@ -38,7 +38,7 @@ console.log("items : ", items); // items :  (3) ['lorem', Array(3), Array(3)]
 // ( let copyItems = items; iki degiskeni esitlemek kopyalama yapmak anlamina gelmez. Esitlemeden sonra yapilan degisiklikler her iki array'e de ayni sekilde yansiz. Biz arrayleri slice komutu ile kopyalariz. Bu komut kullanilarak yapilan kopyalama isleminde bir array.de yapilan degisiklik digerine yansimaz!!! )
 
 copyItems = items.slice(); // kopyalama yapti
-copyItems.pop(); //so ogeyi cikarttik
+copyItems.pop(); //son ogeyi cikarttik
 console.log("copyItems : ", copyItems); // copyItems :  (2) ['lorem', Array(3)]
 console.log("items : ", items); // (3) ['lorem', Array(3), Array(3)]
 // Goruldugu gibi slice yontemi ile yapilan kopyalama isleminde yapilan degisikliler sadece degisiklik yapilan array'de etkili

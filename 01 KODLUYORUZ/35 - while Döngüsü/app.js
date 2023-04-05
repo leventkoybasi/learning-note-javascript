@@ -5,7 +5,7 @@ let counter = 0;
 
 while (counter < 10) {
     console.log(counter);
-    counter += 1; //counter ++
+    counter += 1; //counter ++ // (0 1 2 3 4 5 6 7 8 9)
 }
 
 let userName = "";
