@@ -1,4 +1,4 @@
-/*
+/* ORNEK KOD
 
 const inputBox = document.querySelector('#task');
 const ulDOM = document.getElementById('list');
@@ -59,3 +59,16 @@ let addToastF = () => {
 }
 
 */
+
+let addButtonDOM = document.querySelector("#liveToastBtn");
+let taskDOM = document.querySelector("#task");
+let listDOM = document.querySelector("#list");
+
+addButtonDOM.addEventListener("click", addItem);
+function addItem(event) {
+    event.preventDefault();
+    let liDOM = document.createElement("li");
+    liDOM.innerHTML = taskDOM.value;
+    listDOM.appendChild(liDOM);
+    taskDOM.value = "";
+}
