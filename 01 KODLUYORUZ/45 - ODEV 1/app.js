@@ -65,24 +65,40 @@ let addToastF = () => {
 let addButtonDOM = document.querySelector("#liveToastBtn");
 let taskDOM = document.querySelector("#task");
 let listDOM = document.querySelector("#list");
-let closeBtnDOM = document.querySelector("#closeBtn");
 
 addButtonDOM.addEventListener("click", addItem);
 function addItem(event) {
     event.preventDefault();
-    let liDOM = document.createElement("li");
-    liDOM.innerHTML = taskDOM.value;
-    listDOM.appendChild(liDOM);
+    if (taskDOM.value === "") {
+        console.log("Listeye bos ekleme yapamazsiniz!");
+    } else {
+        let liDOM = document.createElement("li");
+        liDOM.innerHTML = taskDOM.value;
+        listDOM.appendChild(liDOM);
 
-    closeBtnDOM.document.createElement("button");
-    closeBtnDOM.innerHTML = "x";
-    closeBtnDOM.classList.add("close");
-    closeBtnDOM.style.width = "50px";
-    closeBtnDOM.style.height = "50px";
-    liDOM.appendChild(closeBtnDOM);
+        let closeBtnDOM = document.createElement("button");
+        closeBtnDOM.innerHTML = "x";
+        closeBtnDOM.classList.add("close");
+        closeBtnDOM.style.width = "50px";
+        closeBtnDOM.style.height = "50px";
+        liDOM.appendChild(closeBtnDOM);
 
-    taskDOM.value = "";
+        taskDOM.value = "";
+    }
 }
+listDOM.addEventListener(
+    "click",
+    function (e) {
+        if (e.target.tagName === "li") {
+            e.target.classList.toggle("checked");
+            addLocalStorage();
+        } else if (e.target.tagName === "button") {
+            e.target.parentElement.remove();
+            addLocalStorage();
+        }
+    },
+    false
+);
 
 /*
 <ul id="list" style="position: relative;">
