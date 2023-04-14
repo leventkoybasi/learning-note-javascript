@@ -65,6 +65,11 @@ let addToastF = () => {
 let addButtonDOM = document.querySelector("#liveToastBtn");
 let taskDOM = document.querySelector("#task");
 let listDOM = document.querySelector("#list");
+let toDO = document.querySelector("#formInput");
+
+function addLocalStorage() {
+    localStorage.setItem("toDo", list.innerHTML);
+}
 
 addButtonDOM.addEventListener("click", addItem);
 function addItem(event) {
@@ -86,20 +91,25 @@ function addItem(event) {
         taskDOM.value = "";
     }
 }
-listDOM.addEventListener(
-    "click",
-    function (e) {
-        if (e.target.tagName === "li") {
-            e.target.classList.toggle("checked");
-            addLocalStorage();
-        } else if (e.target.tagName === "button") {
-            e.target.parentElement.remove();
-            addLocalStorage();
-        }
-    },
-    false
-);
+// listDOM.addEventListener("click", function (event) {
+//     if (event.target.tagName === "li") {
+//         event.target.classList.toggle("checked");
+//         addLocalStorage();
+// } else if (event.target.tagName === "button") {
+//         event.target.parentElement.remove();
+//         addLocalStorage();
+//     }
+// });
 
+listDOM.addEventListener("click", function (event) {
+    if (event.target.tagName === "LI") {
+        event.target.classList.toggle("checked");
+        addLocalStorage();
+    } else if (event.target.tagName === "BUTTON") {
+        event.target.parentElement.remove();
+        addLocalStorage();
+    }
+});
 /*
 <ul id="list" style="position: relative;">
 <li>3 Litre Su İç
