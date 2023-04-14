@@ -3,7 +3,7 @@
 /*
 1 - Formu Sec
 2 - Input Bilgisini Bul Icine Ekle
-3 - Form Icindeki Bilgiyi Sifirla
+3 - Form Icindeki Bilgiyi SifirlaLisle,
 4 - Eger Forma Bilgi Girilmez ise Kullaniciyi Uyar
 */
 

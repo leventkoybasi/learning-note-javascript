@@ -65,11 +65,9 @@ let addToastF = () => {
 let addButtonDOM = document.querySelector("#liveToastBtn");
 let taskDOM = document.querySelector("#task");
 let listDOM = document.querySelector("#list");
-let toDO = document.querySelector("#formInput");
+let toDo = document.querySelector("ul>li");
 
-function addLocalStorage() {
-    localStorage.setItem("toDo", list.innerHTML);
-}
+localStorage.setItem("myCat", "KEDIII");
 
 addButtonDOM.addEventListener("click", addItem);
 function addItem(event) {
@@ -89,17 +87,9 @@ function addItem(event) {
         liDOM.appendChild(closeBtnDOM);
 
         taskDOM.value = "";
+        addLocalStorage();
     }
 }
-// listDOM.addEventListener("click", function (event) {
-//     if (event.target.tagName === "li") {
-//         event.target.classList.toggle("checked");
-//         addLocalStorage();
-// } else if (event.target.tagName === "button") {
-//         event.target.parentElement.remove();
-//         addLocalStorage();
-//     }
-// });
 
 listDOM.addEventListener("click", function (event) {
     if (event.target.tagName === "LI") {
@@ -110,6 +100,7 @@ listDOM.addEventListener("click", function (event) {
         addLocalStorage();
     }
 });
+
 /*
 <ul id="list" style="position: relative;">
 <li>3 Litre Su İç
