@@ -82,14 +82,17 @@ function addItem(event) {
         let closeBtnDOM = document.createElement("button");
         closeBtnDOM.innerHTML = "x";
         closeBtnDOM.classList.add("close");
-        closeBtnDOM.style.width = "50px";
-        closeBtnDOM.style.height = "50px";
         liDOM.appendChild(closeBtnDOM);
 
         taskDOM.value = "";
         addLocalStorage();
     }
 }
+taskDOM.addEventListener("keypress", function (e) {
+    if (e.key === "Enter") {
+        addItem(e);
+    }
+});
 
 listDOM.addEventListener("click", function (event) {
     if (event.target.tagName === "LI") {
