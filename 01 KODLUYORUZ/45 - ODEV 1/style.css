@@ -69,6 +69,7 @@ ul li.checked::before {
     color: white;
     text-align: center;
     border-bottom: rgb(34, 44, 128) 10px double;
+    border-top: rgb(34, 44, 128) 10px double;
 }
 
 img {

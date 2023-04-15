@@ -14,7 +14,7 @@
 <body>
     <div class="mr-1" style="position: relative">
         <div style="position: absolute; top: 0; right: 0">
-            <div id="liveToast" class="toast success hide" role="alert" aria-live="assertive" aria-atomic="true"
+            <div id="liveToast" class="toast success hide mr-5" role="alert" aria-live="assertive" aria-atomic="true"
                 data-delay="4000">
                 <div>
                     <button type="button" class="close" data-dismiss="toast" aria-label="Close">
@@ -27,7 +27,7 @@
     </div>
     <div class="mr-1" style="position: relative">
         <div style="position: absolute; top: 0; right: 0">
-            <div id="toastWarning" class="toast error hide" role="alert" aria-live="assertive" aria-atomic="true"
+            <div id="toastWarning" class="toast error hide mr-5" role="alert" aria-live="assertive" aria-atomic="true"
                 data-delay="4000">
                 <div>
                     <button type="button" class="close" data-dismiss="toast" aria-label="Close">
@@ -47,10 +47,10 @@
             <h1 class="mb-4">LEVENT ToDo List</h1>
 
             <h2>Yapılacaklar Listesi</h2>
-
-            <input type="text" id="task" placeholder="Bugün ne yapacaksın?" />
-            <span id="liveToastBtn" class="button">Ekle</span>
-
+            <form id="formInput" action="">
+                <input type="text" id="task" placeholder="Bugün ne yapacaksın?" />
+                <span id="liveToastBtn" class="button">Ekle</span>
+            </form>
             <!-- onclick="newElement()" -->
         </div>
 

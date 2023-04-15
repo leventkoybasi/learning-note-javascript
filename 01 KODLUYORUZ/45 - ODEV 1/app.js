@@ -1,75 +1,8 @@
-//ORNEK KOD
-/*
-const inputBox = document.querySelector("#task");
-const ulDOM = document.getElementById("list");
-
-let toDO = document.querySelector("#formInput");
-toDO.addEventListener("submit", formSubmit);
-
-let addBtn = document.querySelector("#toastWarning");
-let addToast = document.querySelector("#liveToast");
-
-function formSubmit(event) {
-    event.preventDefault();
-}
-
-function setConfig() {
-    list.innerHTML = localStorage.getItem("toDO");
-}
-
-console.log(inputBox);
-function newElement() {
-    if (inputBox.value === "") {
-        toastGoster();
-    } else {
-        let li = document.createElement("li");
-        li.innerHTML = inputBox.value;
-        ulDOM.appendChild(li);
-        let btn = document.createElement("button");
-        btn.innerHTML = "X";
-        btn.classList.add("close");
-        li.appendChild(btn);
-        addToastF();
-    }
-    inputBox.value = "";
-    addLocalStorage();
-}
-function addLocalStorage() {
-    localStorage.setItem("toDo", list.innerHTML);
-}
-
-ulDOM.addEventListener(
-    "click",
-    function (e) {
-        if (e.target.tagName === "LI") {
-            e.target.classList.toggle("checked");
-            addLocalStorage();
-        } else if (e.target.tagName === "BUTTON") {
-            e.target.parentElement.remove();
-            addLocalStorage();
-        }
-    },
-    false
-);
-
-let toastGoster = () => {
-    var show = new bootstrap.Toast(addBtn);
-    show.show();
-};
-let addToastF = () => {
-    var goster = new bootstrap.Toast(addToast);
-    goster.show();
-};
-*/
-
 let addButtonDOM = document.querySelector("#liveToastBtn");
 let taskDOM = document.querySelector("#task");
 let listDOM = document.querySelector("#list");
-let toDo = document.querySelector("ul>li");
 let toastWarningDOM = document.querySelector("#toastWarning");
 let liveToastDOM = document.querySelector("#liveToast");
-
-// localStorage.setItem("myCat", "KEDIII");
 
 addButtonDOM.addEventListener("click", addItem);
 function addItem(event) {
@@ -80,16 +13,16 @@ function addItem(event) {
         let liDOM = document.createElement("li");
         liDOM.innerHTML = taskDOM.value;
         listDOM.appendChild(liDOM);
-
         let closeBtnDOM = document.createElement("button");
         closeBtnDOM.innerHTML = "x";
         closeBtnDOM.classList.add("close");
         liDOM.appendChild(closeBtnDOM);
+
         $("#liveToast").toast("show");
         taskDOM.value = "";
-        addLocalStorage();
     }
 }
+
 taskDOM.addEventListener("keypress", function (e) {
     if (e.key === "Enter") {
         addItem(e);
@@ -99,20 +32,7 @@ taskDOM.addEventListener("keypress", function (e) {
 listDOM.addEventListener("click", function (event) {
     if (event.target.tagName === "LI") {
         event.target.classList.toggle("checked");
-        addLocalStorage();
     } else if (event.target.tagName === "BUTTON") {
         event.target.parentElement.remove();
-        addLocalStorage();
     }
 });
-
-function toastWarning() {}
-
-// $('#element').toast('show')
-
-/*
-<ul id="list" style="position: relative;">
-<li>3 Litre Su İç
-<button style="width: 50px; height: 50px;" type="button" class="close" aria-label="Close">x</button>
-</li>
-*/
