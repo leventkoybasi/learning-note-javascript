@@ -66,16 +66,16 @@ let addButtonDOM = document.querySelector("#liveToastBtn");
 let taskDOM = document.querySelector("#task");
 let listDOM = document.querySelector("#list");
 let toDo = document.querySelector("ul>li");
-let addBtn = document.querySelector("#toastWarning");
-let addToast = document.querySelector("#liveToast");
+let toastWarningDOM = document.querySelector("#toastWarning");
+let liveToastDOM = document.querySelector("#liveToast");
 
-localStorage.setItem("myCat", "KEDIII");
+// localStorage.setItem("myCat", "KEDIII");
 
 addButtonDOM.addEventListener("click", addItem);
 function addItem(event) {
     event.preventDefault();
     if (taskDOM.value === "") {
-        console.log("Listeye bos ekleme yapamazsiniz!");
+        $("#toastWarning").toast("show");
     } else {
         let liDOM = document.createElement("li");
         liDOM.innerHTML = taskDOM.value;
@@ -85,7 +85,7 @@ function addItem(event) {
         closeBtnDOM.innerHTML = "x";
         closeBtnDOM.classList.add("close");
         liDOM.appendChild(closeBtnDOM);
-
+        $("#liveToast").toast("show");
         taskDOM.value = "";
         addLocalStorage();
     }
@@ -106,14 +106,9 @@ listDOM.addEventListener("click", function (event) {
     }
 });
 
-let toastGoster = () => {
-    let show = new bootstrap.Toast(addBtn);
-    show.show();
-};
-let addToastF = () => {
-    let goster = new bootstrap.Toast(addToast);
-    goster.show();
-};
+function toastWarning() {}
+
+// $('#element').toast('show')
 
 /*
 <ul id="list" style="position: relative;">
