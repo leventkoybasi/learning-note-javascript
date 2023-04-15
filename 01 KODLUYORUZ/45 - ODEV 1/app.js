@@ -66,6 +66,8 @@ let addButtonDOM = document.querySelector("#liveToastBtn");
 let taskDOM = document.querySelector("#task");
 let listDOM = document.querySelector("#list");
 let toDo = document.querySelector("ul>li");
+let addBtn = document.querySelector("#toastWarning");
+let addToast = document.querySelector("#liveToast");
 
 localStorage.setItem("myCat", "KEDIII");
 
@@ -103,6 +105,15 @@ listDOM.addEventListener("click", function (event) {
         addLocalStorage();
     }
 });
+
+let toastGoster = () => {
+    let show = new bootstrap.Toast(addBtn);
+    show.show();
+};
+let addToastF = () => {
+    let goster = new bootstrap.Toast(addToast);
+    goster.show();
+};
 
 /*
 <ul id="list" style="position: relative;">
