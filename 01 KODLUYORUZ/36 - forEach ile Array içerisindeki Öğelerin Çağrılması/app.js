@@ -23,48 +23,48 @@ PRODUCTS.forEach((product) => console.log(product));
 
 /*
 laptop
-app.js:18 Phone
-app.js:18 Speaker
-app.js:18 Desktop PC
-app.js:18 Server
-app.js:18 Mouse
-app.js:18 Keyboard
+Phone
+Speaker
+Desktop PC
+Server
+Mouse
+Keyboard
 */
 
 PRODUCTS.forEach((product, index) => console.log(product, index));
 
 /*
 laptop 0
-app.js:30 Phone 1
-app.js:30 Speaker 2
-app.js:30 Desktop PC 3
-app.js:30 Server 4
-app.js:30 Mouse 5
-app.js:30 Keyboard 6
+Phone 1
+Speaker 2
+Desktop PC 3
+Server 4
+Mouse 5
+Keyboard 6
 */
 
 PRODUCTS.forEach((product, index, array) => console.log(product, index, array));
 
 /*
 laptop 0 (7) ['laptop', 'Phone', 'Speaker', 'Desktop PC', 'Server', 'Mouse', 'Keyboard']
-app.js:42 Phone 1 (7) ['laptop', 'Phone', 'Speaker', 'Desktop PC', 'Server', 'Mouse', 'Keyboard']
-app.js:42 Speaker 2 (7) ['laptop', 'Phone', 'Speaker', 'Desktop PC', 'Server', 'Mouse', 'Keyboard']
-app.js:42 Desktop PC 3 (7) ['laptop', 'Phone', 'Speaker', 'Desktop PC', 'Server', 'Mouse', 'Keyboard']
-app.js:42 Server 4 (7) ['laptop', 'Phone', 'Speaker', 'Desktop PC', 'Server', 'Mouse', 'Keyboard']
-app.js:42 Mouse 5 (7) ['laptop', 'Phone', 'Speaker', 'Desktop PC', 'Server', 'Mouse', 'Keyboard']
-app.js:42 Keyboard 6 (7) ['laptop', 'Phone', 'Speaker', 'Desktop PC', 'Server', 'Mouse', 'Keyboard']
+Phone 1 (7) ['laptop', 'Phone', 'Speaker', 'Desktop PC', 'Server', 'Mouse', 'Keyboard']
+Speaker 2 (7) ['laptop', 'Phone', 'Speaker', 'Desktop PC', 'Server', 'Mouse', 'Keyboard']
+Desktop PC 3 (7) ['laptop', 'Phone', 'Speaker', 'Desktop PC', 'Server', 'Mouse', 'Keyboard']
+Server 4 (7) ['laptop', 'Phone', 'Speaker', 'Desktop PC', 'Server', 'Mouse', 'Keyboard']
+Mouse 5 (7) ['laptop', 'Phone', 'Speaker', 'Desktop PC', 'Server', 'Mouse', 'Keyboard']
+Keyboard 6 (7) ['laptop', 'Phone', 'Speaker', 'Desktop PC', 'Server', 'Mouse', 'Keyboard']
 */
 
 PRODUCTS.forEach((_product, index, array) => console.log(array[index]));
 
 /*
 laptop
-app.js:54 Phone
-app.js:54 Speaker
-app.js:54 Desktop PC
-app.js:54 Server
-app.js:54 Mouse
-app.js:54 Keyboard
+Phone
+Speaker
+Desktop PC
+Server
+Mouse
+Keyboard
 */
 
 PRODUCTS.forEach((product, index, array) => (array[index] = product + " 111"));

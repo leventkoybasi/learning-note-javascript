@@ -16,10 +16,11 @@ let settings = {
 // let userName = settings.userName;
 // console.log(userName);
 
-let { userName, password, isActive, ip, serverName } = settings;
+//rename && destructuring
+let { userName: user, password, isActive, ip: serverIP, serverName } = settings;
 console.log(userName, password, isActive, ip, serverName); //loremIpsum BadPassword false 127.0.0.1 kodluyoruz.org
 console.log(settings); //{userName: 'loremIpsum', password: 'BadPassword', isActive: false, ip: '127.0.0.1', serverName: 'kodluyoruz.org'}
-console.log(userName); //loremIpsum
+console.log(user); //loremIpsum
 console.log(password); //BadPassword
 
 // obje icerisindeki bazi bilgilerin cikarilmasi

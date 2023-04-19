@@ -39,7 +39,8 @@ for (; counter3 < 10; counter3++) {
     if (counter3 === 5) {
         continue;
     }
-    console.log(counter3); // continue sayesinde 5e kadar doner ama besi atlar
+    console.log(counter3); // continue sayesinde 9a kadar doner ama besi atlar
+    //0 //1 //2 //3 //4 //6 //7 //8 //9
 }
 
 const UL_DOM = document.querySelector("#userList");
