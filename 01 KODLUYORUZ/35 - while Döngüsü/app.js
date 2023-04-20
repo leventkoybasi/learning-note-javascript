@@ -14,3 +14,27 @@ while (!userName) {
     userName = prompt("Kullanici Bilginizi Giriniz : ");
     console.log(userName);
 }
+
+let items = [1, 2, 3, 4, 5];
+let femaleUser = ["Ayse", "Hulya", "Merve"];
+let maleUser = ["Ahmet", "Hasan", "Mehmet"];
+let allUsers = [...femaleUser, ...maleUser];
+
+i = 0;
+while (i < allUsers.length) {
+    console.log(allUsers[i]);
+    i++;
+}
+
+/**
+ 
+var x = 1;
+var sonuc = 1;
+
+while (x <= 5){
+
+ sonuc *= x;
+ x++;
+}
+alert(sonuc); //120
+ */
