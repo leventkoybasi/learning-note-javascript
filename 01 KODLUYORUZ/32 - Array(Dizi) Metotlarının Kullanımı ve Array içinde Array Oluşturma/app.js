@@ -1,4 +1,7 @@
 // 32 - Array(Dizi) Metotlarının Kullanımı ve Array içinde Array Oluşturma
+
+// https://www.w3schools.com/jsref/jsref_obj_array.asp
+
 let items = [1, 2, 3, 4, 5];
 
 //Aray icinde array:
@@ -43,13 +46,17 @@ console.log("copyItems : ", copyItems); // copyItems :  (2) ['lorem', Array(3)]
 console.log("items : ", items); // (3) ['lorem', Array(3), Array(3)]
 // Goruldugu gibi slice yontemi ile yapilan kopyalama isleminde yapilan degisikliler sadece degisiklik yapilan array'de etkili
 
-//Iki aray bilgisini birlestirmek -> [...ES6, ...ES6]
+//Iki aray bilgisini birlestirmek -> [...ES6, ...ES6] .concat()
 
 let es6Items = [...items]; // es6 ve sonrasinda gelen kopyalama islemi, slice komutu ile ayni gorevi yapar
 console.log(es6Items); // (3) ['lorem', Array(3), Array(3)]
 
 let allUsers = [...femaleUser, ...maleUser];
 console.log(allUsers); // (6) ['Ayse', 'Hulya', 'Merve', 'Ahmet', 'Hasan', 'Mehmet']
+
+let allUsers2 = femaleUser.concat(maleUser);
+console.log(allUsers2);
+
 // es6 aray yapisni birlestirme
 
 //Aray icerisindeki bilgiyi String'e cevirmek -> toString, join
