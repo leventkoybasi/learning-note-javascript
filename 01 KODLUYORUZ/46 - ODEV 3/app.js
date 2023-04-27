@@ -72,3 +72,141 @@ const menu = [
         desc: `Red bean paste dessert, serving with honey.`,
     },
 ];
+
+/* <button class="btn btn-outline-dark btn-item" data-id="All">All</button> */
+
+//button1 "All"
+const button1 = document.createElement("button");
+button1.type = "button";
+button1.classList.add("btn", "btn-outline-dark", "btn-item");
+button1.textContent = "All";
+button1.id = "all";
+
+const btnContainerDOM = document.querySelector(".btn-container");
+btnContainerDOM.appendChild(button1);
+
+//button2 "Korea"
+const button2 = document.createElement("button");
+button2.type = "button";
+button2.classList.add("btn", "btn-outline-dark", "btn-item");
+button2.textContent = "Korea";
+button2.id = "korea";
+
+btnContainerDOM.appendChild(button2);
+
+//button3 "Japan"
+const button3 = document.createElement("button");
+button3.type = "button";
+button3.classList.add("btn", "btn-outline-dark", "btn-item");
+button3.textContent = "Japan";
+button3.id = "japan";
+
+btnContainerDOM.appendChild(button3);
+
+//button4 "China"
+const button4 = document.createElement("button");
+button4.type = "button";
+button4.classList.add("btn", "btn-outline-dark", "btn-item");
+button4.textContent = "China";
+button4.id = "china";
+
+btnContainerDOM.appendChild(button4);
+
+// Filter
+
+let allButton = document.querySelector("#all");
+allButton.addEventListener("click", showMenu);
+
+const menuDOM = document.querySelector(".section-center");
+menuDOM.id = "menu";
+function showMenu() {
+    let menuItems = menu.map((item) => {
+        return `<div class="menu-items col-lg-6 col-sm-12">
+            <img src=${item.img}
+                 alt=${item.title}
+                 class="photo"/>
+            <div class="menu-info">
+              <div class="menu-title">
+                <h4>${item.title}</h4>
+                <h4 class="price">${item.price}</h4>
+              </div>
+              <div class="menu-text">
+                ${item.desc}
+              </div>
+            </div>
+          </div>`;
+    });
+    menuDOM.innerHTML = menuItems.join("");
+}
+
+let koreaButton = document.querySelector("#korea");
+koreaButton.addEventListener("click", koreaMenu);
+
+function koreaMenu() {
+    let menuItems = menu.map((item) => {
+        if (item.category === "Korea")
+            return `<div class="menu-items col-lg-6 col-sm-12">
+            <img src=${item.img}
+                 alt=${item.title}
+                 class="photo"/>
+            <div class="menu-info">
+              <div class="menu-title">
+                <h4>${item.title}</h4>
+                <h4 class="price">${item.price}</h4>
+              </div>
+              <div class="menu-text">
+                ${item.desc}
+              </div>
+            </div>
+          </div>`;
+    });
+    menuDOM.innerHTML = menuItems.join("");
+}
+
+let japanButton = document.querySelector("#japan");
+japanButton.addEventListener("click", japanMenu);
+
+function japanMenu() {
+    let menuItems = menu.map((item) => {
+        if (item.category === "Japan")
+            return `<div class="menu-items col-lg-6 col-sm-12">
+            <img src=${item.img}
+                 alt=${item.title}
+                 class="photo"/>
+            <div class="menu-info">
+              <div class="menu-title">
+                <h4>${item.title}</h4>
+                <h4 class="price">${item.price}</h4>
+              </div>
+              <div class="menu-text">
+                ${item.desc}
+              </div>
+            </div>
+          </div>`;
+    });
+    menuDOM.innerHTML = menuItems.join("");
+}
+
+let chinaButton = document.querySelector("#china");
+chinaButton.addEventListener("click", chinaMenu);
+
+function chinaMenu() {
+    let menuItems = menu.map((item) => {
+        if (item.category === "China")
+            return `<div class="menu-items col-lg-6 col-sm-12">
+            <img src=${item.img}
+                 alt=${item.title}
+                 class="photo"/>
+            <div class="menu-info">
+              <div class="menu-title">
+                <h4>${item.title}</h4>
+                <h4 class="price">${item.price}</h4>
+              </div>
+              <div class="menu-text">
+                ${item.desc}
+              </div>
+            </div>
+          </div>`;
+    });
+    menuDOM.innerHTML = menuItems.join("");
+}
