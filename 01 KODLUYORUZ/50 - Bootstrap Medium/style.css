@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "Noe Display Medium";
+    src: url(//db.onlinewebfonts.com/c/c8a005246131bdb05a90af9381307351?family=Noe+Display+Medium);
+}
+/* font-family: 'Merriweather', serif;
+font-family: 'Roboto', sans-serif; */
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.bg-yellow {
+    background-color: #fdc017 !important;
+}
+
+.logo-font {
+    font-family: "Noe Display Medium";
+    font-weight: 600;
+    display: inline;
+}
+.icon-genel {
+    position: relative;
+}
+.logo-icon {
+    width: 38px;
+    position: relative;
+    top: -4px;
+    left: -1px;
+}
