@@ -18,15 +18,23 @@ body {
 
 .logo-font {
     font-family: "Noe Display Medium";
-    font-weight: 600;
+    font-weight: 400;
     display: inline;
 }
 .icon-genel {
     position: relative;
+    left: -60px;
 }
 .logo-icon {
     width: 38px;
     position: relative;
     top: -4px;
     left: -1px;
+}
+.bg-button {
+    background-color: rgba(25, 25, 25, 1) !important;
+}
+.left-side {
+    font-family: "Merriweather", serif;
+    color: aqua;
 }
