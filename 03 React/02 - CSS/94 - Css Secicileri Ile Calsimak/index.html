@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    div {
+      background-color: aqua;
+    }
+
+    .container {
+      background-color: red;
+    }
+
+    .info {
+      background-color: brown;
+    }
+
+    /* EXAMPLE */
+    .container>.span-ionfo {
+      /* konteyner klasi icerisindeki span-info clasi etkilensin */
+      background-color: white;
+    }
+
+    #info {
+      /* Info ID'si icerisindeki etkilensin */
+      background-color: white;
+    }
+
+    * {
+      /* Tum Elementler etkilensin */
+      background-color: white;
+    }
+
+    h1,
+    h2,
+    h3 {
+      /* h1 ve h2 ve h3 elementleri etkilensin */
+      background-color: white;
+    }
+
+    .name1.name2 {
+      /* Sınıf özniteliği içinde hem ad1 hem de ad2 ayarlanmış tüm öğeleri seçer */
+      background-color: white;
+    }
+
+    p.intro {
+      /* class="intro" ile tüm <p> öğelerini seçer */
+      background-color: white;
+    }
+  </style>
+  <title> 94 - Css Secicileri Ile Calsimak </title>
+</head>
+
+<body>
+  <!-- https://www.w3schools.com/cssref/css_selectors.php -->
+  <div class="container">
+    <div class="info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, molestiae.</div>
+    <br>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, nulla.</div>
+  </div>
+</body>
+
+</html>
