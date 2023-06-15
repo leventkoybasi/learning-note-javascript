@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-card {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+.card {
+    display: grid;
+    gap: 5px;
+}
+.article-img-items {
+    width: 100%;
+}
+.article-text-items {
+}
