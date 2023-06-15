@@ -1,15 +1,11 @@
 :root {
-    --green: #2ecc71;
-    --blue: #3498db;
-    --yellow: #e6aa56;
-    --red: #f05d52;
-    --dark-blue: #34495e;
-    --midnight-blue: #2c3e50;
-    --light-white: #ecf0f1;
-    --silver: #bdc3c7;
-    --grey: #bab8bf;
-    --black: #00001a;
-    --white: #fefdf9;
+    --soft-orange: hsl(35, 77%, 62%);
+    --soft-red: hsl(5, 85%, 63%);
+
+    --off-white: hsl(36, 100%, 99%);
+    --grayish-blue: hsl(233, 8%, 79%);
+    --dark-grayish-blue: hsl(236, 13%, 42%);
+    --very-dark-blue: hsl(240, 100%, 5%);
 }
 
 * {
@@ -20,4 +16,95 @@
 
 body {
     font-family: "Inter", sans-serif;
+    background-color: var(--off-white);
+}
+p {
+    font-size: 15px;
+}
+a {
+    text-decoration: none;
+}
+/* HELPER */
+.w-100 {
+    width: 100%;
+}
+ul > li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 autoitem-detail;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.list {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+.list:hover {
+}
+.list-item a {
+    padding: 10px;
+    color: var(--grayish-blue);
+}
+.list-item a:hover {
+    border-bottom: 1px solid var(--dark-grayish-blue);
+    color: var(--dark-grayish-blue);
+}
+.container-main {
+    max-width: 1440px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    margin-top: 20px;
+    gap: 50px;
+}
+section {
+    flex: 2;
+}
+
+aside {
+    background-color: rgb(65, 28, 230);
+    flex: 1;
+}
+.info {
+    display: flex;
+    flex: 1;
+    gap: 10px;
+    padding: 30px 10px;
+}
+.text-item {
+    display: inline-block;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.text-item h2 {
+    font-size: 60px;
+}
+.text-item p {
+    color: var(--dark-grayish-blue);
+}
+
+.btn {
+    display: inline-block;
+    align-items: center;
+    color: var(--off-white);
+    padding: 20px 40px;
+    margin-top: 80px;
+    background-color: var(--soft-red);
+}
+.btn a {
+    color: var(--off-white);
+}
+
+@media (max-width: 375px) {
 }
