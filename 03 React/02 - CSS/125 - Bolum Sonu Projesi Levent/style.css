@@ -67,7 +67,7 @@ ul > li {
     display: flex;
     /* flex-wrap: wrap; */
     margin-top: 1.25rem;
-    gap: 50px;
+    gap: 3.125rem;
 }
 section {
     flex: 2;
@@ -151,23 +151,26 @@ aside p {
 .card-body {
     display: flex;
     justify-content: space-between;
-    gap: 3%;
+    gap: 1.5625rem;
     margin: 6.25rem 0;
 }
 .card {
     display: flex;
+    align-items: center;
     gap: 8%;
     flex: 1;
 }
 
 .card picture img {
-    height: 9.375rem;
+    /* height: 9.375rem; */
+    height: 10vw;
 }
 .text {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 4%;
+    margin-bottom: 1rem;
 }
 .text h2 {
     font-size: 2.5rem;
@@ -205,6 +208,69 @@ aside p {
     }
 }
 @media (max-width: 1200px) {
+    .navbar {
+        margin: 2rem 4rem;
+    }
+    .container-main {
+        display: flex;
+        flex-direction: column;
+    }
+    .info {
+        margin: 2rem 4rem;
+    }
+    .w-100 {
+        width: 90%;
+    }
+    article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    aside {
+        margin: 2rem 4rem;
+    }
+    aside h2 {
+        margin: 0 1.2rem;
+    }
+    .news-item {
+        margin: 2rem 4rem;
+        padding-bottom: 1.4rem;
+    }
+    .container-article {
+        margin: 2rem 4.5rem;
+    }
+    .card-body {
+        display: flex;
+        flex-direction: column;
+    }
+    .card picture img {
+        height: 30vw;
+    }
+    .text h2 {
+        font-size: 8vw;
+    }
+    .text h3 {
+        font-size: 4vw;
+    }
+    .text P {
+        font-size: 3vw;
+    }
+}
+@media (min-width: 851px) {
+    .menu {
+        display: none;
+    }
+}
+@media (max-width: 850px) {
+    .list {
+        display: none;
+    }
+    .menu-icon {
+        background: none;
+        border: none;
+        width: 100%;
+    }
 }
 @media (max-width: 375px) {
 }
