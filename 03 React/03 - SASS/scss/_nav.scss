@@ -1,0 +1,33 @@
+nav {
+  background-color: $bg-color;
+  margin-bottom: 20px;
+  padding: 15px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  div {
+    //logo
+    padding: $padding-10;
+    margin-left: 20px;
+    color: $info-color;
+    border: 1px solid $info-color;
+    font-size: larger;
+  }
+  ul {
+    margin: 0;
+    display: flex;
+    list-style: none;
+    li {
+      a {
+        text-decoration: none;
+        padding: $padding-10;
+        text-transform: uppercase;
+        color: $primary-color;
+        &:hover {
+          color: $secondary-color;
+          border-bottom: 1px solid $primary-color;
+        }
+      }
+    }
+  }
+}
