@@ -1,0 +1,19 @@
+@mixin card_mixin() {
+  display: flex;
+  max-width: 200px;
+  max-height: 400px;
+  margin: 10px;
+  gap: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://picsum.photos/id/26/200/300);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.card {
+  @include card_mixin();
+}

@@ -1,3 +1,65 @@
+.card {
+  display: flex;
+  max-width: 200px;
+  max-height: 400px;
+  margin: 10px;
+  gap: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://picsum.photos/id/26/200/300);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (max-width: 685px) {
+  nav {
+    flex-direction: column;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+}
+.button-basic, .button-submit, .button-report {
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 16px;
+  background-color: #ffa801;
+  outline: 1px solid transparent;
+  cursor: pointer;
+}
+.button-basic:hover, .button-submit:hover, .button-report:hover {
+  opacity: 0.8;
+  outline-color: black;
+}
+
+.button-report {
+  background-color: #f53b57;
+}
+
+.button-submit {
+  background-color: #05c46b;
+  color: white;
+}
+
+.icon-home {
+  background-image: url("/assets/icons/home.svg");
+  font-size: 12px;
+}
+
+.icon-right-arrow {
+  background-image: url("/assets/icons/right-arrow.svg");
+  font-size: 14px;
+}
+
+.icon-left-arrow {
+  background-image: url("/assets/icons/left-arrow.svg");
+  font-size: 14px;
+}
+
 nav {
   background-color: #3c40c6;
   margin-bottom: 20px;
@@ -40,4 +102,14 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.box {
+  width: 500px;
+  height: 300px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
 }/*# sourceMappingURL=style.css.map */

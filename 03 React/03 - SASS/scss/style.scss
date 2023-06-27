@@ -1,5 +1,10 @@
 @import "variables";
+@import "mixin";
+@import "mediaQuerry";
+@import "extend";
+@import "icon";
 @import "nav";
+
 .container {
   background-color: $bg-color;
   color: $text-color;
@@ -10,4 +15,12 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+.box {
+  width: 500px;
+  height: 300px;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
 }
