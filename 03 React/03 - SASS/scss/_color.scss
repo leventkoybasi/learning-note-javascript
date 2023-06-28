@@ -1,0 +1,21 @@
+$base-color: #4bcffa;
+$darken-color: darken($base-color, 20%);
+
+// ister yukarida ister ise asagida renk atamamizi yapabiliyoruz darken veya lighten olarka anahtar kelimeleri kullaniyoruz 2. deger % veriliyor
+
+.main-color {
+  display: inline-block;
+  width: 100px;
+  padding: 20px;
+  background-color: $base-color;
+}
+
+.darken-color {
+  @extend .main-color;
+  background-color: $darken-color;
+}
+
+.lighten-color {
+  @extend .main-color;
+  background-color: lighten($base-color, 30%);
+}

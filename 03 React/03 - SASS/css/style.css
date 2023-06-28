@@ -45,6 +45,21 @@
   color: white;
 }
 
+.main-color, .lighten-color, .darken-color {
+  display: inline-block;
+  width: 100px;
+  padding: 20px;
+  background-color: #4bcffa;
+}
+
+.darken-color {
+  background-color: #06a5d9;
+}
+
+.lighten-color {
+  background-color: #e0f7fe;
+}
+
 .icon-home {
   background-image: url("/assets/icons/home.svg");
   font-size: 12px;
