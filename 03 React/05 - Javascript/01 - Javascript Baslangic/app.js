@@ -249,3 +249,13 @@ let strResult = result.tos;
 // console.log(confirm("Kullanici Adi Silinsin Mi?")); //true or false
 
 //https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog
+
+let divElement = document.createElement("div");
+let h3Element = document.createElement("h3");
+h3Element.textContent = "Yeni EKlenen Oge";
+divElement.appendChild(h3Element);
+let appElement = document.querySelector("#app");
+appElement.appendChild(divElement);
+divElement.style.marginLeft = "4%";
+divElement.style.outline = "2px solid white";
+divElement.style.outlineOffset = "10px";
