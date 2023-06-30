@@ -234,3 +234,18 @@ console.log(parseInt("111abc")); //111
 // parseFloat ile virgullu sayilari alabiliriz.
 
 let strResult = result.tos;
+
+//prompt
+//https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt
+
+// const infom = prompt("En Sevdiginiz Yazilim Dili Hangisidir?");
+
+// console.log(infom);
+
+// alert(infom);
+
+// confirm("Kullanici Adi Silinsin Mi?");
+
+// console.log(confirm("Kullanici Adi Silinsin Mi?")); //true or false
+
+//https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog
