@@ -1,0 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(220, 5.08%, 11.57%);
+  color: beige;
+}

@@ -51,6 +51,7 @@ console.log(iPad.priceWithTax());
 console.log(iPad);
 
 //Working With Objects
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_objects
 
 const firstName2 = "Lorem";
 const lastName2 = "Ipsum Dolor";
@@ -60,6 +61,7 @@ const user = {
   firstName2: firstName2,
   lastName2: lastName2,
   age: age,
+  entries: [1, 2, 34, 45],
 };
 
 //Key Value Ayni Ise
@@ -68,6 +70,7 @@ const userV2 = {
   firstName2,
   lastName2,
   age,
+  hobbies: { daily: ["dans", "egzersiz"] },
 };
 
 console.table(user);
@@ -78,3 +81,18 @@ console.log(
   "input icerisindeki degisken bilgisini kullanabiliriz : ",
   user[input]
 ); //Lorem
+
+console.log(user[input]); //Lorem
+console.log(user.firstName2); //Lorem
+
+function Car(make, model, year) {
+  this.make = make;
+  this.model = model;
+  this.year = year;
+}
+
+const myCar = new Car("Eagle", "Talon TSI", 1993);
+console.table(myCar);
+
+delete myCar.year;
+console.table(myCar);
