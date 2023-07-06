@@ -34,3 +34,17 @@ btn3.addEventListener("click", () => {
   const imgElement = document.querySelector("#image");
   imgElement.classList.toggle("invisible");
 });
+
+//Mouse Enter
+
+const mouseEnter = document.querySelector("#image");
+mouseEnter.addEventListener("mouseenter", () => {
+  console.log("Mous ENTER");
+  document.body.classList.add("bg-dark", "bg-opacity-50");
+});
+
+const mouseOut = document.querySelector("#image");
+mouseOut.addEventListener("mouseout", () => {
+  console.log("Mous OUT");
+  document.body.classList.remove("bg-dark", "bg-opacity-50");
+});
