@@ -27,8 +27,6 @@ ul.menu > li {
   cursor: pointer;
 }
 
-.dropdown {
-}
 .dropdown-menu {
   position: fixed;
   z-index: 999;
