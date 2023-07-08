@@ -13,7 +13,7 @@ function newHexColorInput(itemCount) {
   const newDivElement = document.createElement("div");
   newDivElement.classList.add("col-sm");
   newDivElement.innerHTML = `
-    <label for="colorInput-${itemCount}" class="form-label">HEX Color</label>
+    <label for="colorInput-${itemCount}" class="form-label">ADD HEX COLOR</label>
     <input
       type="text"
       minlength="7"
@@ -50,7 +50,7 @@ hexColorForm.addEventListener("submit", (event) => {
   colorCards.append(addColorPalette(colors));
 
   localStorage.setItem("colors", JSON.stringify(localStorageColors));
-  hexForm.reset();
+  hexColorForm.reset();
 });
 
 if (localStorageColors.length) {
