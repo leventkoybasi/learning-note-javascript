@@ -33,3 +33,9 @@ const newPriceList3 = priceList.filter((item) => {
 });
 
 console.log(newPriceList3); //(6) [400, 300, 100, 50, 70, 90]
+
+// const newPriceList4 = proceList.filter(item => () || () ? true : false)
+const newPriceList4 = priceList.filter((item) =>
+  (item >= 50 && item <= 100) || (item >= 200 && item <= 400) ? true : false
+);
+console.log(newPriceList4); //(6) [400, 300, 100, 50, 70, 90]
