@@ -75,6 +75,17 @@ fetch(JSONPlaceHolderApi2)
     createdUlElement2.append(...listItems2);
   });
 
+/*
+  Bu kodda, .then() bloğu içinde json.map() kullanılarak döngü yerine map() yöntemi kullanılır. map() yöntemi, bir diziyi döngüleyerek her bir öğe üzerinde işlem yapmanızı ve yeni bir dizi döndürmenizi sağlar.
+
+json.map() kullanılarak her bir item için bir <li> elementi oluşturulur ve bu elementler listItems adlı bir diziye eklenir.
+
+Sonra, createdUlElement.append(...listItems) ile listItems dizisi, createdUlElement (yani <ul>) elementine eklenir. Bu, dizideki tüm <li> elementlerini <ul> elementine eklemenizi sağlar.
+
+Bu şekilde, veri öğelerini döngü yerine map() yöntemiyle işleyebilir ve sonuçları <ul> elementi içinde görüntüleyebilirsiniz.
+  
+  */
+
 fetch("app.json")
   .then((res) => res.json())
   .then((res) => console.log(res)); //{user: 'username', info: 1234234, arr: Array(1), isActive: true}
