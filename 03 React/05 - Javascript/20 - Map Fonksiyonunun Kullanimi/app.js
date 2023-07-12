@@ -65,3 +65,35 @@ const newLiItems = [...Array(100)].map(
   (emptyItem, index) => `<li>Item ${index + 1}</li>`
 );
 console.log(newLiItems);
+
+/*
+  Map ile forEach fonksiyonunun arasindaki farklar
+
+1 - map() ve forEach() fonksiyonları JavaScript'te diziler üzerinde çalışmak için kullanılan iki farklı yöntemdir. İşleyişlerindeki temel fark şu şekildedir:
+
+    map() fonksiyonu: map() fonksiyonu, bir diziyi döngüleyerek her bir öğe üzerinde belirli bir işlem yapar ve işlemin sonucunda yeni bir dizi döndürür. Bu yeni dizi, her bir döngülenen öğenin işlemden geçirilmiş halidir. Yani, map() fonksiyonu orijinal diziyi değiştirmez, tamamen yeni bir dizi oluşturur.
+
+    Örneğin:
+
+    const numbers = [1, 2, 3, 4, 5];
+    const doubledNumbers = numbers.map((num) => num * 2);
+    console.log(doubledNumbers); // [2, 4, 6, 8, 10]
+    
+
+    Yukarıdaki örnekte, map() fonksiyonu her bir num öğesi için num * 2 işlemini yaparak yeni bir dizi oluşturur.
+
+2 - forEach() fonksiyonu: forEach() fonksiyonu ise bir diziyi döngüleyerek her bir öğe üzerinde belirli bir işlem yapar. Ancak, forEach() fonksiyonu geri dönüş değeri olarak undefined döndürür ve orijinal diziyi değiştirmez. forEach() fonksiyonu, döngülenen öğeler üzerinde işlem yapmanıza olanak sağlar, ancak bu işlem sonucunda yeni bir dizi oluşturmaz.
+
+  Örneğin:
+
+  const numbers = [1, 2, 3, 4, 5];
+  numbers.forEach((num) => {
+  console.log(num * 2);
+  });
+
+  Yukarıdaki örnekte, forEach() fonksiyonu her bir num öğesi için num * 2 işlemini yaparak sonucu konsola yazdırır.
+
+  Bu şekilde, map() fonksiyonu yeni bir dizi oluştururken, forEach() fonksiyonu ise orijinal dizide değişiklik yapar veya üzerinde işlem yapar ancak yeni bir dizi döndürmez. Hangi yöntemi kullanmanız gerektiği, ihtiyaçlarınıza ve kullanım senaryonuza bağlıdır.
+
+
+*/

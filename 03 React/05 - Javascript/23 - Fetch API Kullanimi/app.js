@@ -89,3 +89,32 @@ Bu şekilde, veri öğelerini döngü yerine map() yöntemiyle işleyebilir ve s
 fetch("app.json")
   .then((res) => res.json())
   .then((res) => console.log(res)); //{user: 'username', info: 1234234, arr: Array(1), isActive: true}
+
+/*
+  
+  // map fonksiyonunu listItems degiskenine niye bagladik? Bglamadan ustteki forEach gibi yapamaz miydik?
+
+  Evet, doğru, map() yöntemini kullanarak listItems adlı bir değişkene bağladık. Bunun nedeni, map() yönteminin, her bir döngülebilir öğe üzerinde işlem yaparak yeni bir dizi döndürmesidir. Bu durumda, her bir item için bir <li> elementi oluşturuyoruz ve bu <li> elementlerini listItems dizisine ekliyoruz.
+
+Bu şekilde, map() yöntemi, her bir item için bir <li> elementi oluştururken aynı zamanda bu elementleri listItems dizisine toplar. Böylece, listItems dizisi, map() yöntemiyle oluşturulan <li> elementlerinin bir koleksiyonunu içerir.
+
+Daha sonra, createdUlElement.append(...listItems) ile listItems dizisindeki tüm <li> elementleri, createdUlElement (yani <ul>) elementine eklenir.
+
+Alternatif olarak, forEach() yerine map() yöntemini kullanmamızın nedeni, map() yönteminin her bir öğe için yeni bir dizi döndürebilmesi ve bu diziye erişebilmemizdir. forEach() yöntemi ise geri dönüş değeri olarak undefined döndürür ve döngülenen öğeler üzerinde işlem yapar.
+
+Eğer map() yerine forEach() kullanmak isterseniz, döngülenen öğeleri doğrudan <ul> elementine ekleyebilirsiniz. Örneğin:
+
+      fetch(JSONPlaceHolderApi)
+        .then((res) => res.json())
+        .then((json) => {
+          json.forEach((item) => {
+            const liElement = document.createElement("li");
+            liElement.innerHTML = item.title;
+            createdUlElement.append(liElement);
+          });
+        });
+  
+
+
+Bu durumda, her bir item için bir <li> elementi oluşturulur ve bu elementler doğrudan createdUlElement (yani <ul>) elementine eklenir. forEach() yöntemi, döngülenen öğeler üzerinde işlem yapmanızı sağlar ve geri dönüş değeri olarak undefined döndürür.
+  */
