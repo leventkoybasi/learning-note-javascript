@@ -20,3 +20,5 @@ const USERS = [
   "Nobis",
   "Voluptatibus",
 ];
+
+export default USERS;
