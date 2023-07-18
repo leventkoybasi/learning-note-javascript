@@ -1,4 +1,4 @@
-export default const IMAGES = [
+const IMAGES = [
   "https://picsum.photos/id/111/600/240",
   "https://picsum.photos/id/112/600/240",
   "https://picsum.photos/id/113/600/240",
@@ -9,4 +9,6 @@ export default const IMAGES = [
   "https://picsum.photos/id/118/600/240",
   "https://picsum.photos/id/119/600/240",
   "https://picsum.photos/id/120/600/240",
-]
+];
+
+export default IMAGES;

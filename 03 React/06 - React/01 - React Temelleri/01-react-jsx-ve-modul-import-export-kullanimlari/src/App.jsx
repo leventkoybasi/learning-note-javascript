@@ -3,8 +3,15 @@ import "./App.css";
 // import { ITEMS, SingleUser, UserList } from "./components/UserList";
 // import UserList, { ITEMS, SingleUser } from "./components/UserList";
 // import UserList, { ITEMS, SingleUser } from "./components/UserList";
+// default ile export edilenlerin isimlerini degistirebilirsin UserList ile Hebele User olarak degistirildi
 import HebeleUserList, { ITEMS, SingleUser } from "./components/UserList";
 import ButtonComponent from "./components/Buton";
+import ImageThumbnail from "./components/ImgThumbnail";
+// import IMAGES from "./data/images";
+import { IMAGES } from "./data";
+import Card from "./components/Card";
+import ConditionalRenderedUserList from "./components/ConditionalRenderedUserList";
+import { INFO } from "./data";
 
 function App() {
   //https://react.dev/learn/writing-markup-with-jsx
@@ -76,8 +83,8 @@ function App() {
           ))}
       </ul>
       {/* {ImageThumbnail()} veya */}
-      <ImageThumbnail />
-      <HebeleUserList />
+      {/* <ImageThumbnail /> */}
+      <HebeleUserList /> {/*<UserList /> ismi degistirilmisti !*/}
       <SingleUser />
       <SingleUser /> {/* Bu sekilde Degil Map Ile :) */}
       {/* 10 adet SIngleUSer Component Nasil Olusturulur. */}
@@ -87,31 +94,75 @@ function App() {
       {ITEMS.map((item, index) => (
         <li key={index}>{item}</li>
       ))}
-      <ButtonComponent />
-    </>
-  );
-  //veya
+      <hr />
+      <ButtonComponent className="btn btn-primary" info="deneme" dataId="1" />
+      <hr />
+      <ImageThumbnail imgSrc={"https://picsum.photos/id/36/600/250"} />
+      <hr />
+      {IMAGES.map((item, index) => (
+        <ImageThumbnail imgSrc={item} key={index} imgAlt="" />
+      ))}
+      <hr />
+      {/* LK YONTEM */}
+      <Card
+        title="Lorem Ipsum Dolor"
+        imgSrc={"https://picsum.photos/id/69/400/250"}
+        imgAlt="Card Alt Bilgisi - Children Yok"
+      />
+      <hr />
+      {/* IKINCI YONTEM */}
+      {/* Eger bir component icerisine bilgi etiket olarak gonderiliyor ise  probs.children olarak kullaniliyor. Bu bilgiler react componenti icine children olarak gidiyor. */}
+      <Card
+        title="Lorem Ipsum Dolor"
+        imgSrc={"https://picsum.photos/id/68/400/250"}
+        imgAlt="Card Alt Bilgisi"
+        dataId="112"
+      >
+        <p>Lorem, ipsum dolor.</p>
+        <p>Commodi, sed modi.</p>
+        <p>Tenetur, veritatis commodi!</p>
+      </Card>
+      <hr />
+      <ConditionalRenderedUserList isActive={true} isLoading={false} />
+      {/*Durum 1 */}
+      <ConditionalRenderedUserList isActive={true} isLoading={true} />
+      {/*Durum 2 */}
+      <hr />
+      <h2>Optiopnal Chaning</h2>
+      <p>
+        NOT: INFO icerisindeki product bilgisi yok. Bu yuzden ? kulaniyoruz,
+        yanlis yazilandan dolayi hata almamak icin...
+      </p>
+      {INFO.product?.map((product, index) => (
+        <li key={index}> {product} </li>
+      ))}
+      {INFO.productzzzzz?.map((product, index) => (
+        <li key={index}> {product} </li>
+      ))}
+      <hr />
+      {/* //veya
   // return (
   //   <React.Fragment>
   //     <div>Div Icerisindeki Bilgi</div>
   //     <h1>Merhaba</h1>;
   //   </React.Fragment>
-  // );
+  // ); */}
+    </>
+  );
 }
 
 // Yeni Component
-function ImageThumbnail() {
-  return (
-    <img
-      src="https://picsum.photos/id/36/600/250"
-      alt=""
-      style={{
-        padding: "4px",
-        borderRadius: "8px",
-        border: "1px solid #bdc3c7",
-      }}
-    />
-  );
-}
+// function ImageThumbnail() {
+//   return (
+//     <img
+//       src="https://picsum.photos/id/36/600/250"
+//       alt=""
+//       style={{
+//         padding: "4px",
+//         borderRadius: "8px",
+//         border: "1px solid #bdc3c7",
+//       }}
+//     />
+//   );
+// }
 export default App;
-stlt;

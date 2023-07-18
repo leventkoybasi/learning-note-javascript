@@ -1,5 +1,7 @@
 import Button from "./Buton";
-import USERS from "../data/users";
+// import USERS from "../data/users";
+//index.js icerisinde tekrardan imp/exp yapildigi icin burada kullanabiliyoruz.
+import { USERS } from "../data";
 
 const ITEMS = [1, 2, 3];
 
@@ -20,7 +22,7 @@ function UserList() {
         ))}
       </ul>
       <hr />
-      <Button />
+      <Button className="btn btn-secondary" />
       <hr />
     </>
   );
