@@ -22,7 +22,7 @@ export default function ImageThumbnail({ imgSrc, imgAlt }) {
     padding: "4px",
     borderRadius: "8px",
     border: "1px solid #bdc3c7",
-    width: "100%",
+    maxWidth: "100%",
     boxSizing: "border-box",
     marginBottom: "5px",
   };
