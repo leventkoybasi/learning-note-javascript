@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Button from "./Button";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -48,7 +49,15 @@ function App() {
         </button>
       </div>
       <hr />
-      <div></div>
+      <div>
+        <Button
+          className="btn btn-outline-warning"
+          label="Sifirla"
+          setCount={setCount}
+          setAge={setAge}
+          setName={setName}
+        />
+      </div>
     </>
   );
 }
