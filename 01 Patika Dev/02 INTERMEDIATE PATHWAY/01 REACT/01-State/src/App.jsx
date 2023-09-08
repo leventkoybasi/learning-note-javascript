@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Button from "./Button";
+import InputExample from "./InputExample";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -33,6 +34,12 @@ function App() {
   return (
     <>
       <div>
+        <InputExample />
+      </div>
+      <br />
+      <hr />
+      <br />
+      <div>
         <h1>COUNT : {count}</h1>
         <button
           className="btn btn-success px-4 mx-2"
@@ -54,7 +61,7 @@ function App() {
           className="btn btn-primary"
           onClick={() => setName(`${name === "Levent" ? "KOYBASI" : "Levent"}`)}
         >
-          AD DEGISTIR
+          {name === "Levent" ? "AD DEGISTIR" : "SOYAD DEGISTIR"}
         </button>
       </div>
       <hr />
@@ -81,15 +88,12 @@ function App() {
       </div>
       <hr />
       <div>
-        <h2>{address.Street}</h2>
-        <h2>{address.Apt}</h2>
-        <h2>{address.City}</h2>
-        <h2>{address.State}</h2>
-        <h2>{address.Zip}</h2>
-        <button
-          onClick={() => setAddress(!newAddress)}
-          className="btn btn-outline-success"
-        >
+        <h4>{address.Street}</h4>
+        <h4>{address.Apt}</h4>
+        <h4>{address.City}</h4>
+        <h4>{address.State}</h4>
+        <h4>{address.Zip}</h4>
+        <button onClick={newAddress} className="btn btn-outline-success">
           Address
         </button>
       </div>
