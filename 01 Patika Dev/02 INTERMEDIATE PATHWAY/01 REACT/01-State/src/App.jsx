@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Button from "./Button";
 import InputExample from "./InputExample";
+import InputExample2 from "./InputExample2";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -35,6 +36,12 @@ function App() {
     <>
       <div>
         <InputExample />
+      </div>
+      <br />
+      <hr />
+      <br />
+      <div>
+        <InputExample2 />
       </div>
       <br />
       <hr />
