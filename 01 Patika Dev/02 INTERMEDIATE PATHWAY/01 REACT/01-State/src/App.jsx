@@ -2,6 +2,7 @@ import { useState } from "react";
 import Button from "./Button";
 import InputExample from "./InputExample";
 import InputExample2 from "./InputExample2";
+import InputDeneme from "./InputDeneme";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -34,6 +35,12 @@ function App() {
 
   return (
     <>
+      <div>
+        <InputDeneme />
+        <br />
+        <br />
+        <hr />
+      </div>
       <div>
         <InputExample />
       </div>
