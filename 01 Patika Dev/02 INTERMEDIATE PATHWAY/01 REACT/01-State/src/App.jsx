@@ -120,6 +120,7 @@ function App() {
           setAge={setAge}
           setName={setName}
           setAddlist={setAddlist}
+          setAddress={setAddress}
         />
       </div>
     </>

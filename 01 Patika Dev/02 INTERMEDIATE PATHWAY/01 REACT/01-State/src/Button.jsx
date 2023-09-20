@@ -1,6 +1,14 @@
 import React from "react";
 
-function Button({ label, setCount, className, setAge, setName, setAddlist }) {
+function Button({
+  label,
+  setCount,
+  className,
+  setAge,
+  setName,
+  setAddlist,
+  setAddress,
+}) {
   return (
     <div>
       <button
@@ -12,6 +20,13 @@ function Button({ label, setCount, className, setAge, setName, setAddlist }) {
           setAge("");
           setName("");
           setAddlist(["Levent", "Nihal"]);
+          setAddress({
+            Street: "Valparaiso St",
+            Apt: 12,
+            City: "Los Angeles",
+            State: "California",
+            Zip: 90034,
+          });
         }}
       >
         {label}
