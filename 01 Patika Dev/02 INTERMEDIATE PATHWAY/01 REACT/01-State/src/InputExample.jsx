@@ -12,7 +12,7 @@ function InputExample() {
         onChange={(event) => setName(event.target.value)}
         value={name}
         type="text"
-        id="text"
+        id="text1"
         className="form-control"
       />
       <br />
@@ -23,7 +23,7 @@ function InputExample() {
         onChange={(event) => setName(event.target.value)}
         value={surname}
         type="text"
-        id="text"
+        id="text2"
         className="form-control"
       />
       <br />

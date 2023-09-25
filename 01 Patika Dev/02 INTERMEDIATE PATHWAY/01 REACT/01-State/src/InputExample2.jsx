@@ -17,7 +17,7 @@ function InputExample2() {
           value={form.name}
           name="name"
           type="text"
-          id="text"
+          id="text3"
           className="form-control"
         />
         <br />
@@ -29,7 +29,7 @@ function InputExample2() {
           value={form.surname}
           name="surname"
           type="text"
-          id="text"
+          id="text4"
           className="form-control"
         />
         <br />

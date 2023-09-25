@@ -3,6 +3,7 @@ import Button from "./Button";
 import InputExample from "./InputExample";
 import InputExample2 from "./InputExample2";
 import InputDeneme from "./InputDeneme";
+import InputExample3 from "./InputExample3";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -35,6 +36,12 @@ function App() {
 
   return (
     <>
+      <div>
+        <InputExample3 />
+        <br />
+        <br />
+        <hr />
+      </div>
       <div>
         <InputDeneme />
         <br />
@@ -73,7 +80,7 @@ function App() {
         <h1>name : {name}</h1>
         <button
           className="btn btn-primary"
-          onClick={() => setName(`${name === "Levent" ? "KOYBASI" : "Levent"}`)}
+          onClick={() => setName(name === "Levent" ? "KOYBASI" : "Levent")}
         >
           {name === "Levent" ? "AD DEGISTIR" : "SOYAD DEGISTIR"}
         </button>
