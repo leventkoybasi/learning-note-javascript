@@ -17,4 +17,14 @@ console.log("Sifre :", PASSWORD);
 // console.log("Sifre :", PASSWORD);
 // const ile bir kez tanimlanir...
 
-//185 8. dakikada kaldim.
+{
+  let user = "Levent2";
+  const PASSWORD = "123123412345123456PASS"; //blok icinde
+  console.log(PASSWORD);
+  console.log(user);
+}
+
+console.log(PASSWORD); //blok disarisinda
+console.log(user);
+
+var userName = "42. satirdaki bilgi";
