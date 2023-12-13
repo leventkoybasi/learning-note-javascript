@@ -12,3 +12,32 @@ body {
 h1 {
   color: beige;
 }
+
+.hidden {
+  visibility: hidden;
+}
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(70, 70, 6);
+  background-color: #e1e78e;
+  height: 60px;
+  list-style: none;
+}
+#nav-item {
+  display: block;
+
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid #2f310a;
+}
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: fixed;
+}
+.dropdown-item {
+}
