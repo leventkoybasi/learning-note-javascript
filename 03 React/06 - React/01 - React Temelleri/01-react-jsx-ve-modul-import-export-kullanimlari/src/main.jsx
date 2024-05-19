@@ -6,7 +6,7 @@ import AppWithState from "./AppWithState";
 const root = document.querySelector("#root");
 ReactDOM.createRoot(root).render(
   <React.StrictMode>
-    {/* <App /> */}
-    <AppWithState />
+    <App />
+    {/* <AppWithState /> */}
   </React.StrictMode>
 );
