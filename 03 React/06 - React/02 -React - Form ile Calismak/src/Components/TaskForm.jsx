@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 
 function TaskForm() {
-  const [formData, setFormData] = useState({});
+  const [formData, setFormData] = useState({
+    task: "",
+    priority: false,
+  });
 
   function handleInputChange(event) {
     setFormData((prev) => {
@@ -13,6 +16,7 @@ function TaskForm() {
             : event.target.value,
       };
     });
+    console.log(event.target.name);
   }
 
   function handleFormSubmit(event) {
@@ -55,7 +59,7 @@ function TaskForm() {
           </div>
         </div>
         <button type="submit" className="btn btn-primary">
-          Sign in
+          Kaydet
         </button>
       </form>
     </div>
@@ -64,4 +68,4 @@ function TaskForm() {
 
 export default TaskForm;
 
-//13:41de kadim
+//07:28de kadim
